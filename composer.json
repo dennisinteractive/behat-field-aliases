@@ -15,7 +15,7 @@
   },
   "autoload": {
     "files": [
-      "src/Drupal/FieldAliases/FieldAliasesClass/FieldAliases.php"
+      "src/Context/FieldAliasesClass/FieldAliases.php"
     ],
     "psr-0": {
       "Drupal\\FieldAliases": "src/"
