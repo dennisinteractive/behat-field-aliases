@@ -2,7 +2,7 @@ default:
   suites:
     default:
       contexts:
-        - Drupal\FieldAliases\Context\FieldAliasesContext:
+        - DennisDigital\Behat\FieldAliases\Context\FieldAliasesContext:
           - field_mapping:
               Title: title
               Body: body
