@@ -1,0 +1,16 @@
+default:
+  suites:
+    default:
+      contexts:
+        - Drupal\FieldAliases\Context\FieldAliasesContext:
+          - field_mapping:
+              Title: title
+              Body: body
+              See Related: field_see_related
+              Related articles: field_related_articles
+              Other Articles: field_other_articles
+              Tags: field_tags
+              Image: field_image
+              Primary Image: field_primary_image
+              Image title: field_file_image_title_text
+              Image alt: field_file_image_alt_text
