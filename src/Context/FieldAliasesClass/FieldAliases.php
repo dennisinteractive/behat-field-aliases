@@ -1,13 +1,13 @@
 <?php
 
-namespace Drupal\FieldAliases\Content;
+namespace DennisDigital\Behat\FieldAliases\Context\FieldAliasesClass;
 
 /**
  * Class FieldAliases
  *
  * Provides the Field mapping of Human readable name vs machine name.
  *
- * @package Drupal\FieldAliases\Content
+ * @package DennisDigital\Behat\FieldAliases\Context\FieldAliasesClass
  */
 class FieldAliases {
 

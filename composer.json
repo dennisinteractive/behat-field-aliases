@@ -14,16 +14,8 @@
     "phpspec/phpspec": "~2.0"
   },
   "autoload": {
-    "files": [
-      "src/Context/FieldAliasesClass/FieldAliases.php"
-    ],
     "psr-0": {
-      "Drupal\\FieldAliases": "src/"
-    }
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "master-dev"
+      "DennisDigital\\Behat\\FieldAliases\\": "src/"
     }
   }
 }

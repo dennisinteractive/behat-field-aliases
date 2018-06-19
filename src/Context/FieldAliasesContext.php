@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\FieldAliases\Context;
+namespace DennisDigital\Behat\FieldAliases\Context;
 
 use Behat\Testwork\Hook\HookDispatcher;
 use Drupal\DrupalDriverManager;
@@ -8,6 +8,10 @@ use Behat\Gherkin\Node\TableNode;
 use Drupal\DrupalExtension\Context\DrupalAwareInterface;
 use Drupal\DrupalUserManagerInterface;
 
+/**
+ * Class FieldAliasesContext
+ * @package DennisDigital\Behat\FieldAliases\Context
+ */
 class FieldAliasesContext implements DrupalAwareInterface {
 
   /**
