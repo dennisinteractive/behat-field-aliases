@@ -7,6 +7,7 @@ use Drupal\DrupalDriverManager;
 use Behat\Gherkin\Node\TableNode;
 use Drupal\DrupalExtension\Context\DrupalAwareInterface;
 use Drupal\DrupalUserManagerInterface;
+use DennisDigital\Behat\FieldAliases\Context\FieldAliasesClass\FieldAliases;
 
 /**
  * Class FieldAliasesContext
@@ -104,7 +105,7 @@ class FieldAliasesContext implements DrupalAwareInterface {
         }
       }
     }
-    var_dump($table);ob_flush();
+    //var_dump($table);ob_flush();
 
     return new TableNode($table);
   }
