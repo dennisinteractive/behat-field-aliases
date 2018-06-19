@@ -14,8 +14,8 @@
     "phpspec/phpspec": "~2.0"
   },
   "autoload": {
-    "psr-0": {
-      "DennisDigital\\Behat\\FieldAliases\\": "src/"
+    "psr-4": {
+      "DennisDigital\\Behat\\FieldAliases\\": "src"
     }
   }
 }
