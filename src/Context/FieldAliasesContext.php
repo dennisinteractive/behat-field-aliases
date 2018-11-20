@@ -89,7 +89,6 @@ class FieldAliasesContext implements DrupalAwareInterface {
    * contains the field names. The problem is that we don't have a way to detect
    * if the table is vertical or horizontal. This could lead to actual values
    * being changed if they match a field name from the mapping.
-   * @todo Detect if the table is vertical or horizontal.
    *
    * @Transform table:*
    */
@@ -97,6 +96,17 @@ class FieldAliasesContext implements DrupalAwareInterface {
     $fieldAliases = New FieldAliases($this->fieldMapping);
     $aliases = $fieldAliases->getAliases();
     $table = $table->getTable();
+
+    if (sizeof($table) > 2) {
+      // Its a vertical table, convert to horizontal.
+      $tmp = array();
+      foreach ($table as $row => $item) {
+        $tmp[0][] = $item[0];
+        $tmp[1][] = $item[1];
+      }
+      $table = $tmp;
+    }
+
     foreach ($table as $rowkey => $row) {
       foreach ($row as $colkey => $value) {
         $value = $table[$rowkey][$colkey];
@@ -105,7 +115,7 @@ class FieldAliasesContext implements DrupalAwareInterface {
         }
       }
     }
-//    var_dump($table);ob_flush();exit;
+    //var_dump($table);ob_flush();
 
     return new TableNode($table);
   }
