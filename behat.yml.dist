@@ -4,11 +4,11 @@ default:
       contexts:
         - DennisDigital\Behat\FieldAliases\Context\FieldAliasesContext:
           - field_mapping:
-              See Related: field_see_related
-              Related articles: field_related_articles
-              Other Articles: field_other_articles
-              Tags: field_tags
-              Image: field_image
-              Primary Image: field_primary_image
-              Image title: field_file_image_title_text
-              Image alt: field_file_image_alt_text
+              field_see_related: See Related
+              field_related_articles: Related articles
+              field_other_articles: Other Articles
+              field_tags: Tags
+              field_image: Image
+              field_primary_image: Primary Image
+              field_file_image_title_text: Image title
+              field_file_image_alt_text: Image alt

@@ -31,7 +31,7 @@ class FieldAliases {
    * @return mixed
    */
   public function getAliases() {
-    return $this->fieldAliases;
+    return array_flip($this->fieldAliases);
   }
 
   /**
@@ -42,8 +42,8 @@ class FieldAliases {
    */
   private function defaultMapping() {
     return array(
-      'Title' => 'title',
-      'Body' => 'body',
+      'title' => 'Title',
+      'body' => 'Body',
     );
   }
 

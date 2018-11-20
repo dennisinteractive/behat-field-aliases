@@ -105,7 +105,7 @@ class FieldAliasesContext implements DrupalAwareInterface {
         }
       }
     }
-    //var_dump($table);ob_flush();
+//    var_dump($table);ob_flush();exit;
 
     return new TableNode($table);
   }
